@@ -1,0 +1,12 @@
+{
+  "name": "@tekksunn/drop-down",
+  "version": "1.0.0",
+  "description": "Package for making drop downs on websites.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "TEKKSUNN <48319429+TEKKSUNN@users.noreply.github.com>",
+  "license": "ISC"
+}
