@@ -1,7 +1,7 @@
 const dropDownQuery = '.drop-down';
  
-const getAll = Array.from(document.querySelectorAll);
-const get = document.querySelector;
+const getAll = (query) => Array.from(document.querySelectorAll(query));
+const get = (query) => document.querySelector(query);
 
 const getNavAfter = (query) => get(`${query} + nav`);
 const getNavsAfter = () => getAll(`${dropDownQuery} + nav`);
