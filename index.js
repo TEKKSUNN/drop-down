@@ -22,9 +22,9 @@ const hide = (element) => changeVisibility(element, "hidden");
 const show = (element) => changeVisibility(element, "visible");
 
 const handleHover = function OnHoverOfDropDownButton(button, navAfter) {
-    const container = navAfter.parentNode;
-    button.addEventListener("mouseover", () => {
-        toggleVisibility(navAfter);
+    const container = button.parentNode;
+    container.addEventListener("mouseover", () => {
+        show(navAfter);
     });
     container.addEventListener("mouseout", () => {
         hide(navAfter);
