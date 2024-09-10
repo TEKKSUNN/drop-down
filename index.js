@@ -59,7 +59,7 @@ const assignEvent = function (button, navAfter, mode) {
         handleHover(button, navAfter);
         return;
     }
-    handleClick(button);
+    handleClick(button, navAfter);
 }
 
 function loadAllDropDowns(mode) {
