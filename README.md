@@ -40,3 +40,6 @@ loadAllDropDowns(".drop-down", hover); // Hover means the nav will only show whe
 // alternatively, this one will only apply to one drop-down button, but you can specify what element and what css selector it is
 loadDropDown(".drop-down", click); // Click means the elements will only show when the button is clicked
 loadDropDown(".drop-down", hover); // Hover means the nav will only show when the button is hovered, and whilst the parent container still has the mouse cursor inside it.
+
+# Example page
+Please go [here](https://tekksunn.github.io/drop-down-example) for better visual explanation.
