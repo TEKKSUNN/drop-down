@@ -1,13 +1,11 @@
-const dropDownQuery = '.drop-down';
- 
 const getAll = (query) => Array.from(document.querySelectorAll(query));
 const get = (query) => document.querySelector(query);
 
 const getNavAfter = (query) => get(`${query} + nav`);
-const getNavsAfter = () => getAll(`${dropDownQuery} + nav`);
+const getNavsAfter = (query) => getAll(`${query} + nav`);
 
 const getDropDown = (query) => get(query);
-const getDropDowns = () => getAll(dropDownQuery);
+const getDropDowns = (query) => getAll(query);
 
 const changeVisibility = function changeVisibilityOfHTMLElement(element, value) {
     const validValues = ["hidden", "visible", "collapse"];
@@ -62,9 +60,9 @@ const assignEvent = function (button, navAfter, mode) {
     handleClick(button, navAfter);
 }
 
-function loadAllDropDowns(mode) {
-    const dropDowns = getDropDowns();
-    const navs = getNavsAfter();
+function loadAllDropDowns(buttonQuery, mode) {
+    const dropDowns = getDropDowns(buttonQuery);
+    const navs = getNavsAfter(buttonQuery);
     dropDowns.forEach((button, index) => {
         const navAfter = navs[index];
         assignEvent(button, navAfter, mode);
