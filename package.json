@@ -1,6 +1,6 @@
 {
   "name": "@tekksunn/drop-down",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Package for making drop downs on websites.",
   "main": "index.js",
   "scripts": {
